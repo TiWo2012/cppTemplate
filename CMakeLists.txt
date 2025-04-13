@@ -10,18 +10,19 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 # Add executable
 add_executable(exxecutableName src/main.cc)
 
+# example of how to download raylib and build it
 # Include FetchContent module
-include(FetchContent)
+# include(FetchContent)
 
 # Fetch raylib
-FetchContent_Declare(
-    raylib
-    GIT_REPOSITORY https://github.com/raysan5/raylib.git
-    GIT_TAG 4.5.0 # Use the latest stable version
-)
-
+# FetchContent_Declare(
+#     raylib
+#     GIT_REPOSITORY https://github.com/raysan5/raylib.git
+#     GIT_TAG 4.5.0 # Use the latest stable version
+# )
+#
 # Build raylib
-FetchContent_MakeAvailable(raylib)
+# FetchContent_MakeAvailable(raylib)
 
 # Link raylib to the executable
 target_link_libraries(executableName PRIVATE raylib)
