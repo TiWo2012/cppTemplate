@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 # Add executable
-add_executable(exxecutableName src/main.cc)
+add_executable(executableName src/main.cc)
 
 # example of how to download raylib and build it
 # Include FetchContent module
